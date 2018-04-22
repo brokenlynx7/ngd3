@@ -9,6 +9,7 @@ import { NodeVisualComponent } from "./visuals/node-visual/node-visual.component
 import { LinkVisualComponent } from "./visuals/link-visual/link-visual.component";
 import { ZoomableDirective } from "./d3/directives/zoomable.directive";
 import { DraggableDirective } from "./d3/directives/draggable.directive";
+import { D3Service } from "./d3";
 
 
 @NgModule({
@@ -24,7 +25,7 @@ import { DraggableDirective } from "./d3/directives/draggable.directive";
 	imports: [
 		BrowserModule
 	],
-	providers: [],
+	providers: [D3Service],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }

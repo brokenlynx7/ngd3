@@ -64,6 +64,7 @@ export class D3Service {
 	*/
 
 	getForceDirectedGraph(nodes: Node[], links: Link[], options: { width, height }): ForceDirectedGraph {
+		console.log("initialising force-directed-graph");
 		return new ForceDirectedGraph(nodes, links, options);
 	}
 }
