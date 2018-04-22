@@ -1,7 +1,7 @@
 
 	// path : visuals/graph/graph.component.ts
 	import { Component, Input, ChangeDetectorRef, ChangeDetectionStrategy, AfterViewInit, OnInit } from "@angular/core";
-	import { D3Service, ForceDirectedGraph, Node } from "../../d3";
+	import { D3Service, ForceDirectedGraph } from "../../d3";
 
 	@Component({
 		selector: "graph",

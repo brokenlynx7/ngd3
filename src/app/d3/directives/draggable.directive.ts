@@ -1,15 +1,15 @@
 
 // path : d3/directives/draggable.directives.ts
-import { Directive, Input, ElementRef } from '@angular/core';
-import { Node, ForceDirectedGraph } from '../models';
-import { D3Service } from '../d3.service';
+import { Directive, Input, ElementRef } from "@angular/core";
+import { Node, ForceDirectedGraph } from "../models";
+import { D3Service } from "../d3.service";
 
 @Directive({
-		selector: '[draggableNode]'
+	selector: "[draggableNode]"
 })
 export class DraggableDirective {
-		@Input('draggableNode') draggableNode: Node;
-		@Input('draggableInGraph') draggableInGraph: ForceDirectedGraph;
+		@Input("draggableNode") draggableNode: Node;
+		@Input("draggableInGraph") draggableInGraph: ForceDirectedGraph;
 
 		constructor(private d3Service: D3Service, private _element: ElementRef) { }
 
