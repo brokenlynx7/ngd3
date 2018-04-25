@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { LineExampleComponent } from "./components/line-example/line-example.component";
 import { Node, Link } from "./d3/models";
-import APP_CONFIG from './app.config';
+import APP_CONFIG from "./app.config";
 @Component({
 	selector: "app-root",
 	templateUrl: "./app.component.html",

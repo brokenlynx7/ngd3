@@ -5,8 +5,10 @@ import { Node } from "../../d3";
 
 @Component({
 	selector: "[nodeVisual]",
-	template: `node-visual.component.html`
+	templateUrl: `node-visual.component.html`,
+	styleUrls: [`./node-visual.style.scss`]
 })
 export class NodeVisualComponent {
 	@Input("nodeVisual") node: Node;
+
 }
