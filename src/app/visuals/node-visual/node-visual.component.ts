@@ -9,6 +9,6 @@ import { Node } from "../../d3";
 	styleUrls: [`./node-visual.style.scss`]
 })
 export class NodeVisualComponent {
-	@Input("nodeVisual") node: Node;
+	@Input("nodeVisual") node: Node;o
 
 }

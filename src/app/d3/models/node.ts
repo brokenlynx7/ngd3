@@ -29,8 +29,13 @@ export class Node implements d3.SimulationNodeDatum {
 		return (30 * this.normal() + 10) + "px";
 	}
 
-	get color() {
+	// string representing rgba colour value
+	get color(): string  {
 		const index = Math.floor(APP_CONFIG.SPECTRUM.length * this.normal());
-		return APP_CONFIG.SPECTRUM[index];
+		return `rgb(${APP_CONFIG.SPECTRUM[index].r},${APP_CONFIG.SPECTRUM[index].g},${APP_CONFIG.SPECTRUM[index].b})`;	
+	}
+
+	get radius(): number {
+		return APP_CONFIG.RADIUS;
 	}
 }
